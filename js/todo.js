@@ -90,6 +90,8 @@ const createNewList = (currenttext) => {
   listDelBtn.addEventListener("click", () => {
     if (window.confirm("Are you sure to delete")) {
       list.remove();
+      updateTaskTotal();
+      updateDoneTaskTotal();
     }
   });
 
